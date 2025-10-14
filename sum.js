@@ -1,18 +1,14 @@
-
-
-var n = 5;
-   if (isNaN(n) || n <= 0) {
-
-    console.log("Invalid Input ");
+prompt = require('prompt-sync')();
+const n = Number(prompt("enter a number that you want to add"));
+let sum =0;
+if(n<=0 && isNaN(n)){
+    console.log("number should be greater than zero");
     
 }else{
-    
-        let fact = 1;
-        for (let i=1;i<=n;i++){
-            fact *= i;
-        }
-        console.log("Factorial is",fact);
-        
+    for(let i = 1;i<=n;i++){
+        sum= sum +i;
+    }
+    console.log("sum is",sum);
     
 
 }
