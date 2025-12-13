@@ -1,0 +1,13 @@
+let arr = [12,34,54]
+let isSort = true
+
+for(let i =0; i<arr.length-1; i++){
+    if(arr[i]>arr[i+1]){
+      
+      isSort = false;
+      break
+    }
+}
+console.log((isSort? "Array is sorted": "Array is not sorted"));
+
+
