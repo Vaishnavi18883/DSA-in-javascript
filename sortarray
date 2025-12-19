@@ -1,0 +1,11 @@
+
+let arr = [2, 4, 6,9, 8]
+let isSort= true
+for(let i =0; i<arr.length;i++){
+    if(arr[i]>arr[i+1]){
+            isSort = false;
+            break
+    }
+    
+}
+console.log("Is array sorted", isSort);
