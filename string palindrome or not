@@ -1,0 +1,13 @@
+let str = 'madam'
+let isPalindrome= true;
+let i = 0;
+let j= str.length-1;
+while(i<j){
+    if(str.charAt(i)!== str.charAt(j)){
+        isPalindrome = false;
+        break;
+    }
+    i++;
+    j--
+}
+console.log(isPalindrome);
