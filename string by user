@@ -1,0 +1,25 @@
+let prompt = require('prompt-sync')();
+let str = prompt("Enter a string")
+let i = 0;
+let j= str.length-1;
+const isAlphaNum = (ch)=> /^[a-z0-9]$/i.test(ch) 
+let ispalindrome = true;
+
+while (i<j) {
+    if (!isAlphaNum(str.charAt(i))) {
+        i++
+        continue
+    }
+    if (!isAlphaNum(str.charAt(j))) {
+        j--;
+        continue;
+    }
+    if (str.charAt(i).toLowerCase()!== str.charAt(j).toLowerCase()) {
+        ispalindrome= false
+        break;
+    }
+    i++;
+    j--
+}
+console.log(ispalindrome);
+
