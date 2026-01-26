@@ -1,0 +1,6 @@
+function sqrt(n){
+    let result = Math.floor(Math.sqrt(n))
+    console.log(result);
+    
+}
+sqrt(8.25)
