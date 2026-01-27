@@ -1,0 +1,7 @@
+let arr = [1,2,3,4]
+let rev= [];
+rev.push(...arr)
+rev.reverse()
+console.log(arr);
+console.log(rev);
+
