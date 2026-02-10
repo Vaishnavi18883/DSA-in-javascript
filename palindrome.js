@@ -2,21 +2,21 @@ var isPalindrome = function(s) {
     let i = 0;
     let j = s.length - 1;
 
-    while (left < right) {
-        while (left < right && !/[a-z0-9]/i.test(s[left])) {
-            left++;
+    while (i < j) {
+        while (i < j && !/[a-z0-9]/i.test(s[i])) {
+            i++;
         }
 
-        while (left < right && !/[a-z0-9]/i.test(s[right])) {
-            right--;
+        while (i < j && !/[a-z0-9]/i.test(s[j])) {
+            j--;
         }
 
-        if (s[left].toLowerCase() !== s[right].toLowerCase()) {
+        if (s[i].toLowerCase() !== s[j].toLowerCase()) {
             return false;
         }
 
-        left++;
-        right--;
+        i++;
+        j--;
     }
 
     return true;
