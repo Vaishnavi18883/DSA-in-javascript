@@ -1,6 +1,6 @@
 var isPalindrome = function(s) {
-    let left = 0;
-    let right = s.length - 1;
+    let i = 0;
+    let j = s.length - 1;
 
     while (left < right) {
         while (left < right && !/[a-z0-9]/i.test(s[left])) {
